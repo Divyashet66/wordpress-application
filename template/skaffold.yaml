@@ -5,7 +5,7 @@ metadata:
 profiles:
   - name: staging
     deploy:
-      kubeContext: gke_tech-rnd-project_us-central1-a_skaffold-cluster
+      kubeContext: gke_tech-rnd-project_us-central1-a_network18-cluster
       kubectl:
         manifests:
           - k8/deployment.yaml

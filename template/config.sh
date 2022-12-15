@@ -1,8 +1,8 @@
 #!/bin/bash
-git_repo=https://github.com/Divyashet66/network18-java.git
+git_repo=https://github.com/Divyashet66/java-application.git
 builder=cnbs/sample-builder:bionic
 image_name=java
-src_folder_name=network18-java/
+src_folder_name=java-application/
 
 deployment_metadata_name=java-app
 replicas=1
@@ -12,7 +12,7 @@ container_name=java-app
 image=gcr.io/tech-rnd-project/java
 container_port=8080
 
-kubeContext=gke_tech-rnd-project_us-central1-a_skaffold-cluster
+kubeContext=gke_tech-rnd-project_us-central1-a_network18-cluster
 manifest1=k8/deployment.yaml
 manifest2=k8/service.yaml
 profile=staging

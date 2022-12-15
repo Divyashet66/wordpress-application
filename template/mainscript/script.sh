@@ -1,5 +1,5 @@
 #!/bin/bash
-source template-java/template/config.sh
+source java-template/template/config.sh
 git clone $git_repo
 pid=$!
 wait $pid
@@ -18,7 +18,7 @@ wait $pid
 # docker push $image
 # wait $pid
 
-# cd template-java/template
+# cd java-template/template
 # wait $pid
 # pwd
 
@@ -28,8 +28,8 @@ wait $pid
 # cd ..
 # cd ..
 pwd
-cp -r template-java/template/k8 template-java/template/skaffold.yaml $src_folder_name
-cp -r template-java/template/Jenkinsfile $src_folder_name
+cp -r java-template/template/k8 java-template/template/skaffold.yaml $src_folder_name
+cp -r java-template/template/Jenkinsfile $src_folder_name
 
 cd $src_folder_name
 pwd

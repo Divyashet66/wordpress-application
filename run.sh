@@ -1,2 +1,2 @@
-sh template-java/template/run.sh
-# sh template-java/master/modules/run.sh 
+sh java-template/template/run.sh
+# sh java-template/master/modules/run.sh 

@@ -1,4 +1,4 @@
 # note
 
 ## to run
-sh template-java/run.sh
+sh java-template/run.sh

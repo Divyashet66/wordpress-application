@@ -1,11 +1,11 @@
 #to give execute permission
-chmod +x template-java/template/editor/script.sh
+chmod +x java-template/template/editor/script.sh
 
 #to edit files
-./template-java/template/editor/script.sh
+./java-template/template/editor/script.sh
 
 #to give execute permission
-chmod +x template-java/template/mainscript/script.sh
+chmod +x java-template/template/mainscript/script.sh
 
 #to build image and deploy to kubernetes
-./template-java/template/mainscript/script.sh
+./java-template/template/mainscript/script.sh
