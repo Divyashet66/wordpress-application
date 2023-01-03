@@ -44,7 +44,7 @@ pipeline {
 			    sh 'whoami'
 			    sh 'sudo chmod 777 /var/run/docker.sock'
 			    sh ' sudo apt update'
-			    sh 'docker build -t gcr.io/tech-rnd-project/wp'    
+			    sh 'docker build -t gcr.io/tech-rnd-project/wp .'    
 		    }
 	    }
 	    
