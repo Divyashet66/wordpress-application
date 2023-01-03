@@ -44,7 +44,7 @@ pipeline {
 			    sh 'whoami'
 			    sh 'sudo chmod 777 /var/run/docker.sock'
 			    sh ' sudo apt update'
-			    sh 'docker build -t gcr.io/tech-rnd-project/wp .'    
+			    sh 'docker build -t gcr.io/tech-rnd-project/wp-app .'    
 		    }
 	    }
 	    
@@ -53,7 +53,7 @@ pipeline {
 			    script {
 				echo "Push Docker Image"
 				sh 'gcloud auth configure-docker'
-				sh "sudo docker push gcr.io/tech-rnd-project/wp"
+				sh "sudo docker push gcr.io/tech-rnd-project/wp-app"
 				
 				sh 'curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl'
 
