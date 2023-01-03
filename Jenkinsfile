@@ -108,7 +108,7 @@ pipeline {
 			 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 			 gcloud container clusters get-credentials wordpress-cluster --zone us-central1-a --project tech-rnd-project
 			 kubectl get pods	
-			 kubectl get service node-app > intake.txt
+			 kubectl get service wordpress-app > intake.txt
 			
 			
 				awk '{print \$4}' intake.txt > extract.txt
