@@ -1,4 +1,4 @@
-def scan_type
+ def scan_type
  def host
  def SendEmailNotification(String result) {
   
@@ -153,4 +153,4 @@ pipeline {
     }
 	
     }
-}
+
