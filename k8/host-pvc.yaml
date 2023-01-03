@@ -9,17 +9,3 @@ spec:
   resources:
     requests:
       storage: 5Gi
-  template:
-    spec:
-      containers:
-        - image: gcr.io/tech-rnd-project/wp-app
-          name: wordpress-app
-          ports:
-            - containerPort: 80
-    metadata:
-      labels:
-        app: wordpress-app
-  replicas: 1
-  selector:
-    matchLabels:
-      app: wordpress-app
